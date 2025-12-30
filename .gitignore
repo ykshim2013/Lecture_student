@@ -12,6 +12,7 @@
 
 # Claude Code
 .claude/
+.playwright-mcp/
 
 # Jekyll build
 _site/
