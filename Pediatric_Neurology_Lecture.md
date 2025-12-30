@@ -2,8 +2,8 @@
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-**Korea University Medical Center (KUMC)**
-**Department of Pediatric Neurology**
+**Author: YK Shim**
+**Division of Pediatric Neurology, Department of Pediatrics, Korea University College of Medicine**
 **Last Updated: 2025**
 
 ---
@@ -1311,7 +1311,7 @@ This illustrates why genetic diagnosis BEFORE medication selection is critical f
 
 ## Acknowledgments
 
-This lecture material is prepared for medical student education at Korea University Medical Center (KUMC), Department of Pediatric Neurology.
+This lecture material is prepared for medical student education by YK Shim, Division of Pediatric Neurology, Department of Pediatrics, Korea University College of Medicine.
 
 ---
 

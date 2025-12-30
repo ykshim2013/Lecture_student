@@ -4,7 +4,7 @@
 # Site settings
 title: Pediatric Neurology Lectures
 description: Comprehensive educational materials for pediatric neurology - seizures, epilepsy, and precision medicine
-author: KUMC Pediatric Neurology
+author: YK Shim
 
 # Theme settings
 remote_theme: pages-themes/cayman@v0.2.0

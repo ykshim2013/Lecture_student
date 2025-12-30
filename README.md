@@ -57,8 +57,8 @@ git clone https://github.com/ykshim2025/Lecture_student.git
 
 ## Author
 
-**Department of Pediatric Neurology**
-Korea University Medical Center (KUMC)
+**YK Shim**
+Division of Pediatric Neurology, Department of Pediatrics, Korea University College of Medicine
 
 ## License
 
