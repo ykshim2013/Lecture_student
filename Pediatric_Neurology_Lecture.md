@@ -27,239 +27,454 @@
 
 ## 1. Introduction
 
-Pediatric neurology encompasses disorders of the nervous system in children, from neonates to adolescents. The developing brain presents unique challenges and opportunities for diagnosis and treatment. This lecture provides a systematic approach to understanding seizures and epilepsy in the pediatric population, with emphasis on the modern genetic era and precision medicine.
+Pediatric neurology encompasses disorders of the nervous system in children, from neonates to adolescents. The developing brain presents unique challenges and opportunities for diagnosis and treatment.
 
 ### Why This Matters
 
-- **Prevalence**: Epilepsy affects approximately 0.5-1% of children worldwide
-- **Impact**: Seizures can significantly affect neurodevelopment and quality of life
-- **Opportunity**: Early accurate diagnosis enables targeted therapy and improved outcomes
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    PEDIATRIC EPILEPSY IMPACT                    │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│   📊 PREVALENCE        🧠 IMPACT           🎯 OPPORTUNITY       │
+│   ─────────────        ──────────          ─────────────        │
+│   0.5-1% of            Affects             Early diagnosis      │
+│   children             development         enables targeted     │
+│   worldwide            & quality           therapy              │
+│                        of life                                  │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+```
 
 ---
 
 ## 2. Seizure Fundamentals
 
-### 2.1 Definitions
-
-| Term | Definition |
-|------|------------|
-| **Seizure** | A transient occurrence of signs/symptoms due to abnormal excessive or synchronous neuronal activity in the brain |
-| **Epilepsy** | A disease characterized by an enduring predisposition to generate epileptic seizures (≥2 unprovoked seizures >24h apart, or 1 seizure with high recurrence risk ≥60%) |
-| **Status Epilepticus** | A seizure lasting >5 minutes, or multiple seizures without full recovery between them |
-
-### 2.2 Seizure Semiology
-
-Understanding seizure onset and evolution is critical for:
-- **Localization**: Identifying the epileptogenic zone
-- **Classification**: Determining seizure type
-- **Treatment Selection**: Guiding appropriate medication choice
-- **Surgical Planning**: When applicable
-
-### 2.3 Key Questions for Seizure History
+### 2.1 Core Definitions
 
 ```
-□ What was the patient doing before the seizure?
-□ Was there any warning (aura)?
-□ Where did the movements start? (focal vs. generalized onset)
-□ What was the sequence of events?
-□ Was there loss of awareness?
-□ How long did each phase last?
-□ What was the postictal state?
-□ Were there any triggers? (fever, sleep deprivation, photic)
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║                           KEY DEFINITIONS                                      ║
+╠═══════════════════════════════════════════════════════════════════════════════╣
+║                                                                               ║
+║  SEIZURE                                                                      ║
+║  ════════                                                                     ║
+║  Transient signs/symptoms due to abnormal excessive                           ║
+║  or synchronous neuronal activity in the brain                                ║
+║                                                                               ║
+║  EPILEPSY                                                                     ║
+║  ════════                                                                     ║
+║  ≥2 unprovoked seizures >24h apart                                           ║
+║           OR                                                                  ║
+║  1 seizure + recurrence risk ≥60%                                            ║
+║                                                                               ║
+║  STATUS EPILEPTICUS                                                           ║
+║  ══════════════════                                                           ║
+║  Seizure lasting >5 minutes OR multiple seizures                              ║
+║  without full recovery between them                                           ║
+║                                                                               ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
 ```
+
+### 2.2 Seizure Semiology: What to Observe
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                        SEIZURE OBSERVATION TIMELINE                          │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│   PRE-ICTAL          ICTAL PHASE           POST-ICTAL                       │
+│   ──────────         ───────────           ──────────                       │
+│                                                                             │
+│   ┌─────────┐       ┌───────────┐         ┌──────────┐                     │
+│   │ WARNING │ ───▶  │  SEIZURE  │  ───▶   │ RECOVERY │                     │
+│   │ (Aura)  │       │  ACTIVITY │         │  PHASE   │                     │
+│   └─────────┘       └───────────┘         └──────────┘                     │
+│                                                                             │
+│   • Behavior        • Where did it        • Confusion?                      │
+│   • Activity          start?              • Weakness?                       │
+│   • Triggers        • Progression?        • Duration?                       │
+│                     • Awareness?          • Sleep?                          │
+│                     • Duration?                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+### 2.3 Seizure History Checklist
+
+| Question | Why It Matters |
+|----------|----------------|
+| What was the patient doing before? | Identify triggers |
+| Was there any warning (aura)? | Suggests focal onset |
+| Where did movements start? | Localization |
+| What was the sequence? | Seizure propagation |
+| Was there loss of awareness? | Focal vs. generalized |
+| How long did each phase last? | Severity assessment |
+| What was the postictal state? | Todd's paralysis, confusion |
+| Any triggers? | Fever, sleep deprivation, photic |
 
 ---
 
 ## 3. ILAE Classification of Epilepsy
 
-The International League Against Epilepsy (ILAE) provides the standardized framework for epilepsy classification.
+### 3.1 Three Levels of Diagnosis (ILAE 2017)
 
-### 3.1 Three Levels of Diagnosis (2017 Framework)
+```mermaid
+flowchart TD
+    A[🔍 LEVEL 1: SEIZURE TYPE] --> B[📋 LEVEL 2: EPILEPSY TYPE]
+    B --> C[🏥 LEVEL 3: EPILEPSY SYNDROME]
+
+    A --> A1[Focal]
+    A --> A2[Generalized]
+    A --> A3[Unknown]
+
+    B --> B1[Focal Epilepsy]
+    B --> B2[Generalized Epilepsy]
+    B --> B3[Combined]
+    B --> B4[Unknown]
+
+    C --> C1[Specific Syndrome<br/>e.g., Dravet, CAE]
+
+    style A fill:#e1f5fe
+    style B fill:#fff3e0
+    style C fill:#e8f5e9
+```
+
+### 3.2 Seizure Classification Overview (ILAE 2017/2025)
 
 ```
-Level 1: SEIZURE TYPE
-    ↓
-Level 2: EPILEPSY TYPE
-    ↓
-Level 3: EPILEPSY SYNDROME
+┌───────────────────────────────────────────────────────────────────────────────┐
+│                        ILAE SEIZURE CLASSIFICATION                            │
+├───────────────────────────────────────────────────────────────────────────────┤
+│                                                                               │
+│                              SEIZURE ONSET                                    │
+│                    ┌────────────┼────────────┐                               │
+│                    ▼            ▼            ▼                               │
+│              ┌─────────┐  ┌──────────┐  ┌─────────┐                          │
+│              │  FOCAL  │  │GENERALIZED│  │ UNKNOWN │                          │
+│              └────┬────┘  └─────┬────┘  └─────────┘                          │
+│                   │             │                                             │
+│         ┌────────┴────────┐    │                                             │
+│         ▼                 ▼    ▼                                             │
+│    ┌─────────┐      ┌─────────────────────────────────┐                      │
+│    │AWARENESS│      │           MOTOR                 │                      │
+│    ├─────────┤      │  • Tonic-clonic  • Myoclonic   │                      │
+│    │Retained │      │  • Tonic         • Atonic      │                      │
+│    │Impaired │      │  • Clonic        • Spasms      │                      │
+│    └─────────┘      └─────────────────────────────────┘                      │
+│         │                                                                     │
+│         ▼           ┌─────────────────────────────────┐                      │
+│    ┌─────────┐      │         NON-MOTOR               │                      │
+│    │  ONSET  │      │  • Typical absence              │                      │
+│    ├─────────┤      │  • Atypical absence             │                      │
+│    │Motor    │      │  • Myoclonic absence            │                      │
+│    │Non-motor│      │  • Eyelid myoclonia             │                      │
+│    └─────────┘      └─────────────────────────────────┘                      │
+│                                                                               │
+└───────────────────────────────────────────────────────────────────────────────┘
 ```
 
-### 3.2 Updated Seizure Classification (2025)
+### 3.3 Focal Seizure Features
 
-The [ILAE updated classification](https://www.ilae.org/guidelines/guidelines-and-reports/updated-classification-of-epileptic-seizures-position-paper-of-the-international-league-against-epilepsy) maintains four main classes:
+| Feature | Options | Clinical Significance |
+|---------|---------|----------------------|
+| **Awareness** | Retained / Impaired | Replaces "simple" vs "complex" |
+| **Motor Onset** | Automatisms, Atonic, Clonic, Tonic, Hyperkinetic, Myoclonic, Spasms | Helps localize |
+| **Non-Motor Onset** | Autonomic, Behavior arrest, Cognitive, Emotional, Sensory | Suggests specific regions |
+| **Progression** | Focal to bilateral tonic-clonic | Previously "secondary generalized" |
 
-| Class | Description |
-|-------|-------------|
-| **Focal** | Originates in networks limited to one hemisphere |
-| **Generalized** | Originates at some point within, and rapidly engaging, bilateral networks |
-| **Unknown** | Cannot be determined whether focal or generalized |
-| **Unclassified** | Inadequate information or unusual features |
+### 3.4 Epilepsy Syndromes by Age
 
-#### Focal Seizures - Key Classifiers
-
-- **Awareness**: Retained vs. Impaired
-- **Motor onset**: Automatisms, atonic, clonic, epileptic spasms, hyperkinetic, myoclonic, tonic
-- **Non-motor onset**: Autonomic, behavior arrest, cognitive, emotional, sensory
-
-#### Generalized Seizures
-
-- **Motor**: Tonic-clonic, clonic, tonic, myoclonic, atonic, epileptic spasms
-- **Non-motor (Absence)**: Typical, atypical, myoclonic, eyelid myoclonia
-
-### 3.3 Epilepsy Syndromes (2022 ILAE Classification)
-
-The [2022 ILAE position papers](https://onlinelibrary.wiley.com/doi/10.1111/epi.17241) established consensus criteria for epilepsy syndromes:
-
-#### Syndromes by Age of Onset
-
-**Neonates and Infants (0-2 years)**
-- Self-limited neonatal epilepsy
-- Self-limited familial neonatal epilepsy
-- Early infantile DEE (e.g., Ohtahara syndrome)
-- Epilepsy of infancy with migrating focal seizures
-- Infantile epileptic spasms syndrome (West syndrome)
-- Dravet syndrome
-
-**Childhood**
-- *Self-limited focal epilepsies:*
-  - Self-limited epilepsy with centrotemporal spikes (SLECTS/Rolandic)
-  - Self-limited epilepsy with autonomic seizures (Panayiotopoulos)
-  - Childhood occipital visual epilepsy
-  - Photosensitive occipital lobe epilepsy
-
-- *Generalized epilepsies:*
-  - Childhood absence epilepsy (CAE)
-  - Epilepsy with myoclonic absences
-  - Epilepsy with eyelid myoclonia (Jeavons syndrome)
-
-- *Developmental and/or Epileptic Encephalopathies (DEE):*
-  - Lennox-Gastaut syndrome
-  - Epileptic encephalopathy with spike-wave activation in sleep
+```
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                     EPILEPSY SYNDROMES BY AGE OF ONSET                          │
+├─────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                 │
+│  NEONATES & INFANTS (0-2 years)                                                │
+│  ═══════════════════════════════                                               │
+│  ┌─────────────────────────────────────────────────────────────────────────┐   │
+│  │ • Self-limited neonatal epilepsy          🟢 Good prognosis            │   │
+│  │ • Self-limited familial neonatal epilepsy 🟢 Good prognosis            │   │
+│  │ • Early infantile DEE (Ohtahara)          🔴 Severe                    │   │
+│  │ • Epilepsy of infancy with migrating      🔴 Severe                    │   │
+│  │   focal seizures (EIMFS)                                               │   │
+│  │ • Infantile spasms (West syndrome)        🟠 Variable                  │   │
+│  │ • Dravet syndrome                         🔴 Severe                    │   │
+│  └─────────────────────────────────────────────────────────────────────────┘   │
+│                                                                                 │
+│  CHILDHOOD (2-12 years)                                                        │
+│  ═══════════════════════                                                       │
+│  ┌─────────────────────────────────────────────────────────────────────────┐   │
+│  │ Self-Limited Focal:                                                     │   │
+│  │ • SLECTS (Rolandic)                       🟢 Excellent prognosis       │   │
+│  │ • Panayiotopoulos syndrome                🟢 Excellent prognosis       │   │
+│  │ • Childhood occipital visual epilepsy     🟢 Good prognosis            │   │
+│  │                                                                         │   │
+│  │ Generalized:                                                            │   │
+│  │ • Childhood absence epilepsy (CAE)        🟢 Good (70% remission)      │   │
+│  │ • Epilepsy with myoclonic absences        🟠 Variable                  │   │
+│  │ • Epilepsy with eyelid myoclonia          🟠 Often lifelong            │   │
+│  │                                                                         │   │
+│  │ DEE:                                                                    │   │
+│  │ • Lennox-Gastaut syndrome                 🔴 Severe, refractory        │   │
+│  │ • ESES/CSWS                               🟠 Cognitive impact          │   │
+│  └─────────────────────────────────────────────────────────────────────────┘   │
+│                                                                                 │
+│  ADOLESCENCE (12-18 years)                                                     │
+│  ═════════════════════════                                                     │
+│  ┌─────────────────────────────────────────────────────────────────────────┐   │
+│  │ • Juvenile absence epilepsy (JAE)         🟠 Often lifelong treatment  │   │
+│  │ • Juvenile myoclonic epilepsy (JME)       🟠 Lifelong treatment needed │   │
+│  │ • Epilepsy with GTC alone                 🟠 Variable                  │   │
+│  └─────────────────────────────────────────────────────────────────────────┘   │
+│                                                                                 │
+│  Legend: 🟢 Good/Excellent  🟠 Variable/Moderate  🔴 Severe/Poor               │
+│                                                                                 │
+└─────────────────────────────────────────────────────────────────────────────────┘
+```
 
 ---
 
 ## 4. Electroencephalography (EEG)
 
-### 4.1 Role of EEG in Pediatric Epilepsy
+### 4.1 EEG Electrode Placement (10-20 System)
 
-EEG is essential for:
-- Confirming epileptic nature of events
-- Classifying seizure/epilepsy type
-- Identifying epilepsy syndrome
-- Localizing epileptogenic zone
-- Monitoring treatment response
+```
+                        INTERNATIONAL 10-20 SYSTEM
+                        ══════════════════════════
 
-### 4.2 Age-Dependent Normal EEG Patterns
+                              Nasion
+                                │
+                    ┌───────────┼───────────┐
+                   Fp1         Fpz         Fp2
+                    │    ╲      │      ╱    │
+                   F7────F3────Fz────F4────F8
+                    │     │     │     │     │
+                   T3────C3────Cz────C4────T4
+                    │     │     │     │     │
+                   T5────P3────Pz────P4────T6
+                    │    ╱      │      ╲    │
+                   O1─────────Oz─────────O2
+                                │
+                              Inion
 
-Understanding normal EEG maturation is critical for accurate interpretation. The [NCBI developmental EEG resource](https://www.ncbi.nlm.nih.gov/books/NBK390356/) provides comprehensive guidance.
+        ┌──────────────────────────────────────────────┐
+        │  Fp = Frontopolar    F = Frontal            │
+        │  T  = Temporal       C = Central            │
+        │  P  = Parietal       O = Occipital          │
+        │  z  = Midline        Odd = Left  Even = Right│
+        └──────────────────────────────────────────────┘
+```
 
-#### Posterior Dominant Rhythm (PDR) Development
+### 4.2 Age-Dependent PDR Development
 
-| Age | PDR Frequency | Key Features |
-|-----|---------------|--------------|
-| Newborn | No PDR | Discontinuous, trace alternant in sleep |
-| 3 months | 3-4 Hz | Emerging rhythmicity |
-| 6 months | 4-5 Hz | PDR established |
-| 12 months | 5-6 Hz | Increasing organization |
-| 2 years | 6-7 Hz | Better defined PDR |
-| 3 years | 7-8 Hz | Approaching alpha range |
-| 8-9 years | 8-9 Hz | Near-adult frequencies |
-| 10-12 years | 9-10 Hz | Adult-like pattern |
+```
+    POSTERIOR DOMINANT RHYTHM (PDR) MATURATION
+    ═══════════════════════════════════════════
 
-#### Age Group Classifications
+    Frequency (Hz)
+         │
+      11 ┤                                          ══════ Adult
+      10 ┤                                    ●━━━━━●
+       9 ┤                              ●━━━━━┘
+       8 ┤                        ●━━━━━┘
+       7 ┤                  ●━━━━━┘
+       6 ┤            ●━━━━━┘
+       5 ┤      ●━━━━━┘
+       4 ┤●━━━━━┘
+       3 ┤
+       2 ┤
+       1 ┤
+         └──┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬──▶ Age
+           3mo   6mo   1yr   2yr   3yr   5yr   8yr  10yr
 
-| Age Group | Age Range | EEG Characteristics |
-|-----------|-----------|---------------------|
-| Neonate | 0-1 month | Rapid changes every 2 weeks in preterm |
-| Infant | 1-12 months | Changes monthly |
-| Toddler | 1-3 years | Changes yearly |
-| Preschool | 3-6 years | Gradual maturation |
-| School-age | 6-12 years | Approaches adult pattern |
-| Adolescent | 13-18 years | Adult-like, 10 Hz alpha |
+    ┌─────────────────────────────────────────────────────────────┐
+    │  CLINICAL PEARL: PDR should be at least [Age in years + 2]  │
+    │  Example: 5-year-old should have PDR ≥ 7 Hz                 │
+    └─────────────────────────────────────────────────────────────┘
+```
 
-### 4.3 Normal Variants (Not to be Misinterpreted as Abnormal)
+### 4.3 Normal vs Abnormal EEG Patterns
 
-| Pattern | Description | Clinical Significance |
-|---------|-------------|----------------------|
-| **Posterior slow waves of youth** | Intermixed delta in posterior regions | Normal until age 12 |
-| **Mu rhythm** | Central arciform 8-10 Hz | Blocked by movement/thought |
-| **Lambda waves** | Posterior sharp transients | Present with visual scanning |
-| **Hypnagogic hypersynchrony** | High-amplitude theta in drowsiness | Normal in children |
-| **Vertex waves** | Sharp transients at Cz in sleep | Normal Stage N2 |
+```
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                           EEG PATTERN RECOGNITION                               │
+├─────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                 │
+│  ✅ NORMAL VARIANTS (Don't over-interpret!)                                     │
+│  ═══════════════════════════════════════════                                   │
+│                                                                                 │
+│  Pattern                    Appearance           Age Range                      │
+│  ───────────────────────────────────────────────────────────                   │
+│  Posterior slow of youth    ∿∿∿ Delta waves     Children < 12 yrs              │
+│                             posterior                                           │
+│                                                                                 │
+│  Mu rhythm                  ⌒⌒⌒ Arch-shaped     Any age                        │
+│                             8-10 Hz, central                                    │
+│                                                                                 │
+│  Lambda waves               ∧ Sharp             Visual scanning                 │
+│                             occipital                                           │
+│                                                                                 │
+│  Hypnagogic hypersynchrony  ≋≋≋ High amp       Children                        │
+│                             theta, drowsy                                       │
+│                                                                                 │
+│  POSTS                      ⋏ Positive          Adolescents                     │
+│                             occipital                                           │
+│                                                                                 │
+├─────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                 │
+│  ⚠️ EPILEPTIFORM PATTERNS                                                       │
+│  ════════════════════════                                                       │
+│                                                                                 │
+│  Pattern                    Appearance           Associated Syndrome            │
+│  ───────────────────────────────────────────────────────────────────           │
+│  Centrotemporal spikes      ╱╲                  SLECTS (Rolandic)              │
+│                             C3/C4, T3/T4                                        │
+│                                                                                 │
+│  3 Hz spike-wave            ╱╲_╱╲_╱╲           Childhood absence               │
+│                             Generalized                                         │
+│                                                                                 │
+│  Hypsarrhythmia             ≋∧≋∧≋∧             West syndrome                   │
+│                             Chaotic, high amp                                   │
+│                                                                                 │
+│  Slow spike-wave (<2.5 Hz)  ╱╲__╱╲__           Lennox-Gastaut                  │
+│                             Generalized                                         │
+│                                                                                 │
+│  Polyspike-wave             ╱╲╱╲╱╲_            JME                             │
+│                             Multiple spikes                                     │
+│                                                                                 │
+│  Burst-suppression          ∧∧∧____∧∧∧____     Early infantile DEE            │
+│                             Bursts + flat                                       │
+│                                                                                 │
+└─────────────────────────────────────────────────────────────────────────────────┘
+```
 
-### 4.4 Pathological EEG Patterns
+### 4.4 EEG Patterns and Associated Syndromes
 
-#### Interictal Epileptiform Discharges (IEDs)
-
-| Pattern | Associated Syndrome |
-|---------|---------------------|
-| Centrotemporal spikes | Self-limited epilepsy with centrotemporal spikes |
-| 3 Hz spike-wave | Childhood absence epilepsy |
-| Hypsarrhythmia | Infantile spasms (West syndrome) |
-| Slow spike-wave (<2.5 Hz) | Lennox-Gastaut syndrome |
-| Generalized polyspike-wave | Juvenile myoclonic epilepsy |
-| Focal spikes/sharp waves | Focal epilepsy |
+| EEG Pattern | Visual | Syndrome | Key Features |
+|-------------|--------|----------|--------------|
+| **3 Hz Spike-Wave** | `∧_∧_∧_` | Childhood Absence | Abrupt onset/offset, hyperventilation activates |
+| **Centrotemporal Spikes** | `_∧_` | SLECTS/Rolandic | Sleep-activated, horizontal dipole |
+| **Hypsarrhythmia** | `≋∧≋` | Infantile Spasms | Chaotic, asynchronous, high amplitude |
+| **Slow Spike-Wave** | `∧__∧__` | Lennox-Gastaut | <2.5 Hz, runs during sleep |
+| **Burst-Suppression** | `∧∧∧___` | Early DEE | Bursts alternating with flat periods |
+| **Photoparoxysmal** | `∧∧∧` | JME, Dravet | Triggered by photic stimulation |
 
 ---
 
 ## 5. Seizures in the Genetic Era
 
-### 5.1 The Genetic Architecture of Epilepsy
+### 5.1 Genetic Architecture of Epilepsy
 
-Approximately **40% of epilepsies** have a significant genetic component. The landmark paper by [Manolio et al. (Nature, 2009)](https://www.nature.com/articles/nature08494) introduced the concept of "missing heritability."
-
-#### Types of Genetic Variants
-
-| Type | Frequency | Effect Size | Detection Method |
-|------|-----------|-------------|------------------|
-| Common variants | >1% in population | Small | GWAS |
-| Rare variants | <1% in population | Large | Sequencing |
-| De novo mutations | Unique to individual | Variable | Trio WES/WGS |
-| Copy number variants | Variable | Variable | Microarray, WGS |
+```
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│              GENETIC ARCHITECTURE OF EPILEPSY                                   │
+├─────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                 │
+│                            40% of epilepsies have                               │
+│                          significant genetic component                          │
+│                                                                                 │
+│  EFFECT SIZE                                                                    │
+│       ▲                                                                         │
+│       │    ┌─────────────────────────────────────────────────────────────┐     │
+│  HIGH │    │  RARE VARIANTS                                              │     │
+│       │    │  • De novo mutations        🧬 SCN1A, KCNQ2, STXBP1         │     │
+│       │    │  • Single gene disorders    🧬 Found by WES/WGS             │     │
+│       │    │  • Large effect             🧬 Often DEEs                   │     │
+│       │    └─────────────────────────────────────────────────────────────┘     │
+│       │                                                                         │
+│       │              THE MISSING                                                │
+│       │              HERITABILITY                                               │
+│       │                  GAP                                                    │
+│       │                                                                         │
+│       │    ┌─────────────────────────────────────────────────────────────┐     │
+│  LOW  │    │  COMMON VARIANTS                                            │     │
+│       │    │  • Found by GWAS            🧬 Polygenic risk               │     │
+│       │    │  • Small individual effect  🧬 IGE/GGE associations         │     │
+│       │    │  • Cumulative effect        🧬 Population risk              │     │
+│       │    └─────────────────────────────────────────────────────────────┘     │
+│       │                                                                         │
+│       └───────────────────────────────────────────────────────────────────▶    │
+│                          ALLELE FREQUENCY                                       │
+│                      Rare ◄──────────────────► Common                          │
+│                                                                                 │
+└─────────────────────────────────────────────────────────────────────────────────┘
+```
 
 ### 5.2 Major Epilepsy Genes
 
-The following genes are most frequently implicated in genetic epilepsies:
-
-#### Ion Channel Genes
-
-| Gene | Channel | Phenotype | Inheritance |
-|------|---------|-----------|-------------|
-| **SCN1A** | Nav1.1 | Dravet syndrome, GEFS+ | AD (often de novo) |
-| **SCN2A** | Nav1.2 | Early infantile DEE, BFNIS | AD |
-| **SCN8A** | Nav1.6 | Early infantile DEE | AD (de novo) |
-| **KCNQ2** | Kv7.2 | BFNE, KCNQ2-DEE | AD |
-| **KCNT1** | KNa1.1 | EIMFS, ADNFLE | AD |
-
-#### Synaptic Function Genes
-
-| Gene | Function | Phenotype |
-|------|----------|-----------|
-| **STXBP1** | Synaptic vesicle release | Ohtahara, West syndrome, DEE |
-| **SYNGAP1** | Synaptic plasticity | ID with epilepsy |
-| **CDKL5** | Kinase signaling | CDKL5-DEE, atypical Rett |
-| **PCDH19** | Cell adhesion | PCDH19-clustering epilepsy (females) |
-
-#### Gene Prevalence (per live births)
-
-Based on recent epidemiological data:
-- **PRRT2**: 1 per 9,970
-- **SCN1A**: 1 per 12,200
-- **KCNQ2**: 1 per 17,000
-- **SLC2A1**: 1 per 24,300
+```
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                         MAJOR EPILEPSY GENES                                    │
+├─────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                 │
+│  🔴 SODIUM CHANNELS                                                            │
+│  ════════════════════════════════════════════════════════════════             │
+│  ┌────────┬──────────┬─────────────────────────┬───────────────────┐          │
+│  │ Gene   │ Channel  │ Phenotype               │ Prevalence        │          │
+│  ├────────┼──────────┼─────────────────────────┼───────────────────┤          │
+│  │ SCN1A  │ Nav1.1   │ Dravet, GEFS+           │ 1:12,200 births   │          │
+│  │ SCN2A  │ Nav1.2   │ Early DEE, BFNIS        │ --                │          │
+│  │ SCN8A  │ Nav1.6   │ Early DEE               │ --                │          │
+│  └────────┴──────────┴─────────────────────────┴───────────────────┘          │
+│                                                                                 │
+│  🔵 POTASSIUM CHANNELS                                                         │
+│  ════════════════════════════════════════════════════════════════             │
+│  ┌────────┬──────────┬─────────────────────────┬───────────────────┐          │
+│  │ Gene   │ Channel  │ Phenotype               │ Prevalence        │          │
+│  ├────────┼──────────┼─────────────────────────┼───────────────────┤          │
+│  │ KCNQ2  │ Kv7.2    │ BFNE, KCNQ2-DEE         │ 1:17,000 births   │          │
+│  │ KCNT1  │ KNa1.1   │ EIMFS, ADNFLE           │ --                │          │
+│  │ KCNA2  │ Kv1.2    │ DEE, episodic ataxia    │ --                │          │
+│  └────────┴──────────┴─────────────────────────┴───────────────────┘          │
+│                                                                                 │
+│  🟢 SYNAPTIC FUNCTION                                                          │
+│  ════════════════════════════════════════════════════════════════             │
+│  ┌────────┬───────────────────┬───────────────────────────────────┐           │
+│  │ Gene   │ Function          │ Phenotype                         │           │
+│  ├────────┼───────────────────┼───────────────────────────────────┤           │
+│  │ STXBP1 │ Vesicle release   │ Ohtahara, West, DEE               │           │
+│  │ SYNGAP1│ Synaptic plasticity│ ID + epilepsy                    │           │
+│  │ CDKL5  │ Kinase signaling  │ CDKL5-DEE, atypical Rett          │           │
+│  │ PCDH19 │ Cell adhesion     │ Clustering epilepsy (♀)           │           │
+│  └────────┴───────────────────┴───────────────────────────────────┘           │
+│                                                                                 │
+│  🟡 OTHER IMPORTANT GENES                                                      │
+│  ════════════════════════════════════════════════════════════════             │
+│  ┌────────┬───────────────────┬───────────────────────────────────┐           │
+│  │ Gene   │ Function          │ Phenotype                         │           │
+│  ├────────┼───────────────────┼───────────────────────────────────┤           │
+│  │ PRRT2  │ Synaptic protein  │ PKD, BFIE (1:9,970 - most common!)│           │
+│  │ SLC2A1 │ Glucose transport │ GLUT1 deficiency (1:24,300)       │           │
+│  │ TSC1/2 │ mTOR pathway      │ Tuberous sclerosis                │           │
+│  │ DEPDC5 │ mTOR pathway      │ FFEVF, focal epilepsy             │           │
+│  └────────┴───────────────────┴───────────────────────────────────┘           │
+│                                                                                 │
+└─────────────────────────────────────────────────────────────────────────────────┘
+```
 
 ### 5.3 Developmental and Epileptic Encephalopathies (DEEs)
 
-DEEs are severe conditions where both the underlying etiology and epileptic activity contribute to developmental impairment. [Over 800 genes](https://www.sciencedirect.com/science/article/abs/pii/S2352464224001962) have been implicated in DEEs.
+```mermaid
+graph TD
+    subgraph DEE["DEVELOPMENTAL & EPILEPTIC ENCEPHALOPATHIES (DEEs)"]
+        A[Over 800 genes identified] --> B[Both epilepsy AND development affected]
+        B --> C{Age of Onset}
 
-#### Key DEE Genes and Clinical Features
+        C -->|Neonatal| D[KCNQ2<br/>STXBP1<br/>SCN2A]
+        C -->|Early Infantile| E[SCN1A<br/>CDKL5<br/>SCN8A]
+        C -->|Infantile| F[ARX<br/>PCDH19<br/>SLC2A1]
 
-| Gene | Key Features | Treatment Considerations |
-|------|--------------|-------------------------|
-| **SCN1A** | Fever-triggered seizures, myoclonic jerks | AVOID sodium channel blockers |
-| **KCNQ2** | Neonatal onset, tonic seizures | Sodium channel blockers EFFECTIVE |
-| **STXBP1** | Variable phenotype, movement disorders | Levetiracetam may help |
-| **CDKL5** | Early onset, stereotypies (~79%) | Limited ASM efficacy |
+        D --> G[Burst-Suppression Pattern]
+        E --> H[Variable EEG]
+        F --> I[Hypsarrhythmia possible]
+    end
+
+    style DEE fill:#fff5f5
+    style D fill:#ffebee
+    style E fill:#fff3e0
+    style F fill:#e8f5e9
+```
 
 ---
 
@@ -267,250 +482,466 @@ DEEs are severe conditions where both the underlying etiology and epileptic acti
 
 ### 6.1 First Seizure Evaluation Algorithm
 
-```
-FIRST UNPROVOKED SEIZURE
-           │
-           ▼
-┌──────────────────────────────┐
-│  IMMEDIATE ASSESSMENT        │
-│  • ABC, vitals, glucose      │
-│  • Detailed history          │
-│  • Neurological examination  │
-└──────────────────────────────┘
-           │
-           ▼
-┌──────────────────────────────┐
-│  RED FLAGS? (Emergent imaging)│
-│  • Prolonged postictal state │
-│  • Focal deficits            │
-│  • Signs of elevated ICP     │
-│  • History of trauma         │
-│  • Immunocompromised         │
-│  • Age < 6 months            │
-└──────────────────────────────┘
-           │
-    ┌──────┴──────┐
-    ▼             ▼
-   YES           NO
-    │             │
-    ▼             ▼
- CT/MRI        Outpatient
- (emergent)    EEG + MRI
-```
+```mermaid
+flowchart TD
+    A[🚨 FIRST UNPROVOKED SEIZURE] --> B{Child returned<br/>to baseline?}
 
-### 6.2 When to Image
+    B -->|No| C[🔴 RED FLAGS]
+    B -->|Yes| D{Risk factors<br/>present?}
 
-Based on [clinical pathway guidelines](https://www.chop.edu/clinical-pathway/unprovoked-seizure-clinical-pathway):
+    C --> C1[• Prolonged postictal >30min]
+    C --> C2[• Focal neurological deficit]
+    C --> C3[• Signs of elevated ICP]
+    C --> C4[• History of trauma]
+    C --> C5[• Age < 6 months]
+    C --> C6[• Immunocompromised]
 
-#### Emergent Imaging Indicated
+    C1 & C2 & C3 & C4 & C5 & C6 --> E[🏥 EMERGENT IMAGING<br/>CT → MRI]
 
-- Prolonged postictal confusion (>30 minutes)
-- Persistent focal neurological deficit
-- Signs of elevated intracranial pressure
-- History of significant head trauma
-- Immunocompromised state
-- Concern for abuse
-- Age < 6 months with symptomatic seizure
+    D -->|Yes| F[Outpatient workup<br/>within 24-48h]
+    D -->|No| G[Outpatient workup<br/>within 1-2 weeks]
 
-#### Emergent Imaging NOT Required
+    F --> H[📋 COMPLETE WORKUP]
+    G --> H
 
-- Returned to baseline
-- Non-focal examination
-- Recognized epilepsy syndrome (e.g., CAE, SLECTS)
-- Simple febrile seizure
+    H --> H1[EEG - routine or sleep-deprived]
+    H --> H2[MRI brain - epilepsy protocol]
+    H --> H3[Labs if indicated]
+    H --> H4[Consider genetics]
 
-#### Imaging Modality Selection
-
-| Modality | Indication | Advantages |
-|----------|------------|------------|
-| **CT Head** | Acute trauma, hemorrhage | Fast, widely available |
-| **MRI Brain (epilepsy protocol)** | All other epilepsy workup | Superior soft tissue detail |
-
-### 6.3 Laboratory Evaluation
-
-#### Routine Studies
-
-| Test | Indication |
-|------|------------|
-| Glucose | All seizures |
-| Electrolytes (Na, Ca, Mg) | Suspected metabolic cause |
-| CBC with differential | Infection suspected |
-| Toxicology screen | Altered mental status, adolescents |
-
-#### Extended Metabolic Workup
-
-Consider when:
-- Developmental regression
-- Family history of metabolic disease
-- Specific seizure types (myoclonic, infantile spasms)
-- Refractory epilepsy
-
-| Test | Target Conditions |
-|------|-------------------|
-| Lactate, pyruvate | Mitochondrial disorders |
-| Amino acids (plasma) | Aminoacidopathies |
-| Organic acids (urine) | Organic acidemias |
-| Ammonia | Urea cycle disorders |
-| CSF studies | GLUT1 deficiency, neurotransmitter disorders |
-
-### 6.4 Genetic Testing Strategy
-
-Reference: [McTague et al., The Lancet Neurology (2016)](https://www.thelancet.com/journals/laneur/article/PIIS1474-4422(15)00283-2/fulltext)
-
-#### Testing Algorithm
-
-```
-SUSPECTED GENETIC EPILEPSY
-           │
-           ▼
-┌─────────────────────────────────┐
-│ STEP 1: Chromosomal Microarray  │
-│ (Detect CNVs, aneuploidy)       │
-└─────────────────────────────────┘
-           │
-    Normal │
-           ▼
-┌─────────────────────────────────┐
-│ STEP 2: Gene Panel or WES       │
-│ Consider clinical presentation: │
-│ • Specific syndrome → Panel     │
-│ • Unknown etiology → WES        │
-└─────────────────────────────────┘
-           │
-    Normal │
-           ▼
-┌─────────────────────────────────┐
-│ STEP 3: WGS, RNA-seq, or        │
-│ Functional studies              │
-└─────────────────────────────────┘
+    style A fill:#ffcdd2
+    style C fill:#ffebee
+    style E fill:#ef5350,color:#fff
+    style H fill:#e8f5e9
 ```
 
-#### Clinical Impact of Genetic Diagnosis
+### 6.2 Diagnostic Workup Summary
 
-Finding the molecular cause leads to management changes in **36% of patients** with DEEs, including:
-- Medication optimization
-- Avoidance of harmful drugs
-- Targeted therapy selection
-- Accurate prognosis
-- Genetic counseling
+```
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                        FIRST SEIZURE WORKUP CHECKLIST                           │
+├─────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                 │
+│  📋 IMMEDIATE (Emergency Department)                                            │
+│  ════════════════════════════════════                                          │
+│  □ Glucose (bedside + lab confirmation)                                         │
+│  □ Electrolytes (Na, Ca, Mg) if metabolic cause suspected                       │
+│  □ CBC if infection suspected                                                   │
+│  □ Toxicology screen if altered mental status                                   │
+│  □ CT head ONLY if red flags present                                           │
+│                                                                                 │
+│  📋 OUTPATIENT (Within 1-2 weeks)                                              │
+│  ═══════════════════════════════════                                           │
+│  □ EEG (routine; sleep-deprived if initial normal)                             │
+│  □ MRI brain with epilepsy protocol                                            │
+│  □ Detailed developmental assessment                                            │
+│                                                                                 │
+│  📋 EXTENDED WORKUP (If indicated)                                             │
+│  ═══════════════════════════════════                                           │
+│  □ Video-EEG monitoring                                                        │
+│  □ Genetic testing (panel, WES, WGS)                                           │
+│  □ Metabolic studies (lactate, amino acids, etc.)                              │
+│  □ LP with CSF studies                                                         │
+│                                                                                 │
+└─────────────────────────────────────────────────────────────────────────────────┘
+```
+
+### 6.3 When to Order Genetic Testing
+
+```mermaid
+flowchart LR
+    A[Consider Genetic Testing] --> B{Clinical Features}
+
+    B --> C[Early onset<br/>< 2 years]
+    B --> D[Refractory to<br/>2+ ASMs]
+    B --> E[Developmental<br/>regression]
+    B --> F[Family history<br/>of epilepsy]
+    B --> G[Dysmorphic<br/>features]
+    B --> H[Specific EEG<br/>patterns]
+
+    C & D & E & F & G & H --> I{Testing Strategy}
+
+    I --> J[Chromosomal<br/>Microarray]
+    I --> K[Epilepsy Gene<br/>Panel]
+    I --> L[Whole Exome<br/>Sequencing]
+    I --> M[Whole Genome<br/>Sequencing]
+
+    J --> N[CNVs, Aneuploidy]
+    K --> O[Known epilepsy genes]
+    L --> P[Coding regions]
+    M --> Q[Complete genome]
+
+    style A fill:#e3f2fd
+    style I fill:#fff3e0
+```
+
+### 6.4 Genetic Testing Algorithm
+
+```
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                    GENETIC TESTING DECISION PATHWAY                             │
+├─────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                 │
+│                        STEP 1: Chromosomal Microarray                           │
+│                        ═══════════════════════════════                          │
+│                                     │                                           │
+│                                     ▼                                           │
+│                    ┌────────────────────────────────┐                          │
+│                    │  Detects CNVs, deletions,      │                          │
+│                    │  duplications, aneuploidy      │                          │
+│                    │  Yield: ~5-10% in epilepsy     │                          │
+│                    └────────────────────────────────┘                          │
+│                                     │                                           │
+│                              Normal │                                           │
+│                                     ▼                                           │
+│                        STEP 2: Gene Panel or WES                                │
+│                        ═══════════════════════════                              │
+│                                     │                                           │
+│              ┌──────────────────────┴──────────────────────┐                   │
+│              ▼                                              ▼                   │
+│  ┌──────────────────────────┐              ┌──────────────────────────┐        │
+│  │  SPECIFIC PHENOTYPE      │              │  UNKNOWN ETIOLOGY        │        │
+│  │  → Gene Panel            │              │  → WES (Trio preferred)  │        │
+│  │  • Faster turnaround     │              │  • Broader coverage      │        │
+│  │  • Less VUS              │              │  • Higher yield (~30%)   │        │
+│  │  • Lower cost            │              │  • More VUS              │        │
+│  └──────────────────────────┘              └──────────────────────────┘        │
+│                                     │                                           │
+│                              Normal │                                           │
+│                                     ▼                                           │
+│                        STEP 3: Advanced Testing                                 │
+│                        ════════════════════════                                 │
+│                                     │                                           │
+│              ┌──────────────────────┼──────────────────────┐                   │
+│              ▼                      ▼                      ▼                   │
+│  ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐            │
+│  │  WGS            │    │  RNA-seq        │    │  Functional     │            │
+│  │  (non-coding)   │    │  (splicing)     │    │  Studies        │            │
+│  └─────────────────┘    └─────────────────┘    └─────────────────┘            │
+│                                                                                 │
+│  ═══════════════════════════════════════════════════════════════════          │
+│  💡 CLINICAL IMPACT: Finding the cause leads to management changes             │
+│     in 36% of DEE patients!                                                    │
+│  ═══════════════════════════════════════════════════════════════════          │
+│                                                                                 │
+└─────────────────────────────────────────────────────────────────────────────────┘
+```
 
 ---
 
 ## 7. Physical Examination and Phenotyping
 
-### 7.1 Importance of Systematic Phenotyping
+### 7.1 Systematic Phenotyping Approach
 
-Systematic phenotyping:
-- Guides genetic test selection
-- Enables genotype-phenotype correlation
-- Facilitates syndrome recognition
-- Improves diagnostic yield
+```
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                    COMPREHENSIVE PHENOTYPING CHECKLIST                          │
+├─────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                 │
+│  📏 GROWTH PARAMETERS                                                           │
+│  ═════════════════════                                                         │
+│  □ Head circumference → Plot on growth chart                                    │
+│    • Microcephaly: < -2 SD (consider MECP2, FOXG1, genetic syndromes)          │
+│    • Macrocephaly: > +2 SD (consider PTEN, megalencephaly syndromes)           │
+│  □ Height and weight → Failure to thrive? Overgrowth?                          │
+│  □ Growth trajectory → Crossing percentiles?                                    │
+│                                                                                 │
+│  👤 CRANIOFACIAL EXAMINATION                                                   │
+│  ═══════════════════════════                                                   │
+│  ┌─────────────┬───────────────────────────────────────────────────────┐       │
+│  │ Region      │ Features to Assess                                    │       │
+│  ├─────────────┼───────────────────────────────────────────────────────┤       │
+│  │ Skull       │ Shape, fontanelles (open/closed), sutures             │       │
+│  │ Forehead    │ Prominent? Sloping? Bossing?                          │       │
+│  │ Eyes        │ Spacing (hyper/hypotelorism), slant, epicanthus       │       │
+│  │ Nose        │ Bridge (depressed/prominent), tip, nares              │       │
+│  │ Ears        │ Position (low-set?), rotation, size, pits/tags        │       │
+│  │ Mouth       │ Philtrum length, lip thickness, palate                │       │
+│  │ Chin        │ Micro/retrognathia, prognathism                       │       │
+│  └─────────────┴───────────────────────────────────────────────────────┘       │
+│                                                                                 │
+│  🖐️ EXTREMITIES                                                                │
+│  ═══════════════                                                               │
+│  □ Digits: Count, syndactyly, polydactyly, clinodactyly                        │
+│  □ Palms: Single transverse crease, dermatoglyphics                            │
+│  □ Limbs: Proportions, contractures, tone                                      │
+│                                                                                 │
+└─────────────────────────────────────────────────────────────────────────────────┘
+```
 
-### 7.2 Standardized Terminology Resources
+### 7.2 Neurocutaneous Markers
 
-#### Human Phenotype Ontology (HPO)
+```
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                        NEUROCUTANEOUS FINDINGS                                  │
+├─────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                 │
+│  TUBEROUS SCLEROSIS COMPLEX (TSC1/TSC2)                                        │
+│  ══════════════════════════════════════                                        │
+│                                                                                 │
+│  ┌──────────────────┐   ┌──────────────────┐   ┌──────────────────┐           │
+│  │  ASH-LEAF SPOTS  │   │   SHAGREEN PATCH │   │  ANGIOFIBROMAS   │           │
+│  │    (╭───────╮)   │   │   ┌──────────┐   │   │     • • •        │           │
+│  │    │░░░░░░░│    │   │   │▓▓▓▓▓▓▓▓▓▓│   │   │    • • • •      │           │
+│  │    │░░░░░░░│    │   │   │▓▓▓▓▓▓▓▓▓▓│   │   │     • • •        │           │
+│  │    ╰───────╯     │   │   └──────────┘   │   │   (nose, cheeks) │           │
+│  │  Hypopigmented   │   │  Connective      │   │   Facial papules │           │
+│  │  Wood's lamp (+) │   │  tissue nevus    │   │   appear age 3-5 │           │
+│  └──────────────────┘   └──────────────────┘   └──────────────────┘           │
+│                                                                                 │
+│  NEUROFIBROMATOSIS TYPE 1 (NF1)                                                │
+│  ═══════════════════════════════                                               │
+│                                                                                 │
+│  ┌──────────────────┐   ┌──────────────────┐   ┌──────────────────┐           │
+│  │ CAFÉ-AU-LAIT     │   │ AXILLARY/INGUINAL│   │ LISCH NODULES    │           │
+│  │    ┌───────┐     │   │    FRECKLING     │   │      ◉           │           │
+│  │    │░░░░░░░│     │   │    · · · · ·     │   │   (iris)         │           │
+│  │    └───────┘     │   │    · · · · ·     │   │                  │           │
+│  │  ≥6 spots        │   │  Crowe sign      │   │  Slit lamp exam  │           │
+│  │  >5mm prepubertal│   │                  │   │                  │           │
+│  │  >15mm adult     │   │                  │   │                  │           │
+│  └──────────────────┘   └──────────────────┘   └──────────────────┘           │
+│                                                                                 │
+│  STURGE-WEBER SYNDROME                                                         │
+│  ═════════════════════                                                         │
+│                                                                                 │
+│  ┌──────────────────────────────────────────┐                                  │
+│  │      PORT-WINE STAIN (V1 distribution)   │                                  │
+│  │                                          │                                  │
+│  │           ╭──────╮                       │                                  │
+│  │          ╱▓▓▓▓▓▓▓▓╲  ← Trigeminal V1    │                                  │
+│  │         │▓▓▓▓▓▓▓▓▓▓│                     │                                  │
+│  │         │  ◉    ◉  │                     │                                  │
+│  │         │    ▽     │                     │                                  │
+│  │         │   ───    │                     │                                  │
+│  │          ╲________╱                      │                                  │
+│  │                                          │                                  │
+│  │  Associated with: leptomeningeal         │                                  │
+│  │  angioma, glaucoma, seizures             │                                  │
+│  └──────────────────────────────────────────┘                                  │
+│                                                                                 │
+└─────────────────────────────────────────────────────────────────────────────────┘
+```
 
-The [Human Phenotype Ontology](https://hpo.jax.org/) provides standardized vocabulary for phenotype description.
+### 7.3 HPO and Standardized Terminology
 
-**Key Features:**
-- Over 16,000 terms organized hierarchically
-- Directly integrated with genomic databases
-- Supports computational phenotype matching
-- Updated annually with expansions for neurology
-
-#### NIH Elements of Morphology
-
-[Elements of Morphology](https://elementsofmorphology.nih.gov) provides standardized definitions for dysmorphic features with photographic examples.
-
-### 7.3 Systematic Examination Checklist
-
-#### Growth Parameters
-
-- [ ] Head circumference (microcephaly/macrocephaly)
-- [ ] Height and weight
-- [ ] Growth trajectory over time
-
-#### Craniofacial Features
-
-| Region | Features to Assess |
-|--------|-------------------|
-| Skull | Shape, fontanelles, sutures |
-| Face | Symmetry, proportions |
-| Eyes | Spacing, slant, epicanthal folds |
-| Nose | Bridge, tip, nares |
-| Ears | Position, rotation, morphology |
-| Mouth | Philtrum, lip thickness, palate |
-
-#### Skin Examination (Neurocutaneous Markers)
-
-| Finding | Associated Condition |
-|---------|---------------------|
-| Hypopigmented macules (ash-leaf spots) | Tuberous sclerosis |
-| Café-au-lait spots (≥6) | Neurofibromatosis type 1 |
-| Facial angiofibromas | Tuberous sclerosis |
-| Port-wine stain (V1 distribution) | Sturge-Weber syndrome |
-| Hyperpigmentation (whorled) | Incontinentia pigmenti |
-
-#### Neurological Examination
-
-- [ ] Mental status and development level
-- [ ] Cranial nerves
-- [ ] Motor: tone, strength, reflexes
-- [ ] Sensory examination
-- [ ] Coordination and gait
-- [ ] Involuntary movements
+```
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                    PHENOTYPE DOCUMENTATION RESOURCES                            │
+├─────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                 │
+│  🌐 HUMAN PHENOTYPE ONTOLOGY (HPO)                                             │
+│  ══════════════════════════════════                                            │
+│  Website: https://hpo.jax.org                                                  │
+│                                                                                 │
+│  ┌─────────────────────────────────────────────────────────────────────────┐   │
+│  │                        HPO HIERARCHY EXAMPLE                            │   │
+│  │                                                                         │   │
+│  │  Abnormality of the nervous system (HP:0000707)                        │   │
+│  │       │                                                                 │   │
+│  │       ├── Abnormal CNS morphology                                       │   │
+│  │       │       │                                                         │   │
+│  │       │       └── Cerebral cortical dysplasia                          │   │
+│  │       │                                                                 │   │
+│  │       └── Seizure (HP:0001250)                                         │   │
+│  │               │                                                         │   │
+│  │               ├── Focal seizure                                         │   │
+│  │               │       ├── Focal aware seizure                          │   │
+│  │               │       └── Focal impaired awareness seizure             │   │
+│  │               │                                                         │   │
+│  │               └── Generalized seizure                                   │   │
+│  │                       ├── Absence seizure                              │   │
+│  │                       └── Tonic-clonic seizure                         │   │
+│  │                                                                         │   │
+│  └─────────────────────────────────────────────────────────────────────────┘   │
+│                                                                                 │
+│  📚 NIH ELEMENTS OF MORPHOLOGY                                                 │
+│  ══════════════════════════════                                                │
+│  Website: https://elementsofmorphology.nih.gov                                 │
+│                                                                                 │
+│  • Standardized definitions with photographs                                    │
+│  • Anatomical terminology for dysmorphic features                              │
+│  • Essential for consistent phenotype documentation                            │
+│                                                                                 │
+└─────────────────────────────────────────────────────────────────────────────────┘
+```
 
 ---
 
 ## 8. Precision Medicine in Epilepsy
 
-### 8.1 The Promise of Precision Therapy
+### 8.1 Gene-Specific Treatment Overview
 
-Precision medicine aims to match treatment to the underlying molecular mechanism. Reference: [PMC article on precision medicine in epilepsy](https://pmc.ncbi.nlm.nih.gov/articles/PMC9561034/)
+```mermaid
+flowchart TD
+    subgraph PRECISION["🎯 PRECISION MEDICINE IN EPILEPSY"]
+        A[Genetic Diagnosis] --> B{Gene Identified}
 
-### 8.2 Gene-Specific Treatment Strategies
+        B -->|SCN1A| C[🔴 DRAVET SYNDROME]
+        B -->|KCNQ2| D[🟢 KCNQ2-EPILEPSY]
+        B -->|SLC2A1| E[🟡 GLUT1 DEFICIENCY]
+        B -->|TSC1/2| F[🟣 TUBEROUS SCLEROSIS]
 
-#### SCN1A (Dravet Syndrome) - Critical Safety Information
+        C --> C1[❌ AVOID Na+ blockers]
+        C --> C2[✓ Valproate, Clobazam]
+        C --> C3[✓ Stiripentol, CBD, Fenfluramine]
 
-**⚠️ MEDICATIONS TO AVOID:**
+        D --> D1[✓ Na+ blockers EFFECTIVE]
+        D --> D2[✓ Carbamazepine, Phenytoin]
 
-| Drug Class | Specific Drugs | Reason |
-|------------|---------------|--------|
-| Sodium channel blockers | Phenytoin, Carbamazepine, Oxcarbazepine, Lamotrigine, Lacosamide, Rufinamide | Worsen seizures and status epilepticus |
-| GABA modulators | Vigabatrin, Tiagabine | May worsen seizures |
+        E --> E1[✓ KETOGENIC DIET]
+        E --> E2[⚠️ Limited ASM efficacy]
 
-Reference: [Dravet Syndrome Foundation - Medications to Avoid](https://dravetsyndromenews.com/medications-to-avoid-dravet-syndrome/)
+        F --> F1[✓ mTOR inhibitors]
+        F --> F2[✓ Everolimus, Sirolimus]
+    end
 
-**✓ RECOMMENDED TREATMENTS:**
+    style PRECISION fill:#f5f5f5
+    style C fill:#ffebee
+    style D fill:#e8f5e9
+    style E fill:#fff8e1
+    style F fill:#f3e5f5
+```
 
-1. **First-line**: Valproate + Clobazam
-2. **Add-on**: Stiripentol, Cannabidiol, Fenfluramine
-3. **Rescue**: Benzodiazepines (NOT phenytoin/fosphenytoin)
+### 8.2 SCN1A/Dravet Syndrome - Critical Safety Information
 
-#### KCNQ2-Related Epilepsy
+```
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║                                                                               ║
+║   ⚠️⚠️⚠️  DRAVET SYNDROME (SCN1A) - MEDICATION ALERT  ⚠️⚠️⚠️                  ║
+║                                                                               ║
+╠═══════════════════════════════════════════════════════════════════════════════╣
+║                                                                               ║
+║   ❌ MEDICATIONS TO AVOID (Can worsen seizures & cause status epilepticus!)   ║
+║   ═══════════════════════════════════════════════════════════════════════    ║
+║                                                                               ║
+║   SODIUM CHANNEL BLOCKERS:                                                    ║
+║   ┌─────────────────────────────────────────────────────────────────────┐    ║
+║   │  • Phenytoin (Dilantin)       • Lacosamide (Vimpat)                │    ║
+║   │  • Fosphenytoin (Cerebyx)     • Rufinamide (Banzel)                │    ║
+║   │  • Carbamazepine (Tegretol)   • Eslicarbazepine                    │    ║
+║   │  • Oxcarbazepine (Trileptal)                                       │    ║
+║   │  • Lamotrigine (Lamictal)                                          │    ║
+║   └─────────────────────────────────────────────────────────────────────┘    ║
+║                                                                               ║
+║   OTHER MEDICATIONS TO AVOID:                                                 ║
+║   ┌─────────────────────────────────────────────────────────────────────┐    ║
+║   │  • Vigabatrin (Sabril)        • Pregabalin (Lyrica)                │    ║
+║   │  • Tiagabine (Gabitril)       • Gabapentin                         │    ║
+║   └─────────────────────────────────────────────────────────────────────┘    ║
+║                                                                               ║
+║   ✅ RECOMMENDED TREATMENTS                                                   ║
+║   ════════════════════════                                                   ║
+║                                                                               ║
+║   FIRST-LINE:                                                                 ║
+║   ┌─────────────────────────────────────────────────────────────────────┐    ║
+║   │  • Valproate (Depakote) + Clobazam (Onfi)                          │    ║
+║   └─────────────────────────────────────────────────────────────────────┘    ║
+║                                                                               ║
+║   ADD-ON OPTIONS:                                                             ║
+║   ┌─────────────────────────────────────────────────────────────────────┐    ║
+║   │  • Stiripentol (Diacomit)     • Topiramate                         │    ║
+║   │  • Cannabidiol (Epidiolex)    • Ketogenic diet                     │    ║
+║   │  • Fenfluramine (Fintepla)                                         │    ║
+║   └─────────────────────────────────────────────────────────────────────┘    ║
+║                                                                               ║
+║   🚨 IN STATUS EPILEPTICUS:                                                  ║
+║   ┌─────────────────────────────────────────────────────────────────────┐    ║
+║   │  ✓ USE:   Benzodiazepines (Lorazepam, Midazolam, Diazepam)        │    ║
+║   │  ✓ USE:   Valproate IV                                             │    ║
+║   │  ✗ AVOID: Phenytoin/Fosphenytoin (even in emergency!)             │    ║
+║   │  ✗ AVOID: Lacosamide                                               │    ║
+║   └─────────────────────────────────────────────────────────────────────┘    ║
+║                                                                               ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
+```
 
-Based on the [KCNQ2 paradigm for precision medicine](https://jtggjournal.com/article/view/3566):
+### 8.3 Treatment Comparison: SCN1A vs KCNQ2
 
-| Variant Type | Mechanism | Treatment |
-|--------------|-----------|-----------|
-| Loss of function (LOF) | Reduced channel activity | Sodium channel blockers EFFECTIVE |
-| Gain of function (GOF) | Increased channel activity | Sodium channel blockers optimal |
+```
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│            OPPOSITE TREATMENT STRATEGIES: SCN1A vs KCNQ2                        │
+├─────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                 │
+│                    SCN1A                          KCNQ2                         │
+│              (Dravet Syndrome)              (KCNQ2 Epilepsy)                   │
+│                                                                                 │
+│   Mechanism:   Loss of Nav1.1          Mechanism:   Loss of Kv7.2              │
+│                function in             (or Gain of function)                   │
+│                inhibitory neurons                                               │
+│                                                                                 │
+│                     │                              │                            │
+│                     ▼                              ▼                            │
+│        ┌────────────────────────┐    ┌────────────────────────┐               │
+│        │    Na+ CHANNEL         │    │    Na+ CHANNEL         │               │
+│        │    BLOCKERS            │    │    BLOCKERS            │               │
+│        │                        │    │                        │               │
+│        │   ❌ CONTRAINDICATED   │    │   ✅ FIRST-LINE        │               │
+│        │                        │    │                        │               │
+│        │   • Worsen seizures    │    │   • Often effective    │               │
+│        │   • Can cause SE       │    │   • CBZ, OXC, PHT      │               │
+│        │   • May be fatal       │    │   • Early response     │               │
+│        └────────────────────────┘    └────────────────────────┘               │
+│                                                                                 │
+│   ┌─────────────────────────────────────────────────────────────────────────┐ │
+│   │  💡 CLINICAL PEARL: Genetic diagnosis BEFORE medication selection       │ │
+│   │     can prevent harm and improve outcomes!                               │ │
+│   └─────────────────────────────────────────────────────────────────────────┘ │
+│                                                                                 │
+└─────────────────────────────────────────────────────────────────────────────────┘
+```
 
-**First-line**: Carbamazepine, Oxcarbazepine, Phenytoin
+### 8.4 Emerging Therapies
 
-#### STXBP1-DEE
-
-- **Levetiracetam**: Good response in 6/8 patients
-- **Vigabatrin**: Effective for epileptic spasms (4/5 patients)
-
-### 8.3 Emerging Therapies
-
-| Approach | Target | Status |
-|----------|--------|--------|
-| Antisense oligonucleotides (ASO) | SCN1A (Dravet) | Clinical trials |
-| Gene therapy (ETX101) | SCN1A | Clinical trials |
-| CRISPR/dCas9 | SCN1A upregulation | Preclinical |
-| Ezogabine/Retigabine | KCNQ2 | Compassionate use |
+```
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                         EMERGING PRECISION THERAPIES                            │
+├─────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                 │
+│  🧬 ANTISENSE OLIGONUCLEOTIDES (ASO)                                           │
+│  ═══════════════════════════════════                                           │
+│  ┌─────────────────────────────────────────────────────────────────────────┐   │
+│  │  Target: SCN1A (Dravet syndrome)                                        │   │
+│  │  Mechanism: Upregulate SCN1A expression via TANGO approach              │   │
+│  │  Status: Phase 3 clinical trials (Zorevunersen)                         │   │
+│  │                                                                         │   │
+│  │     Normal mRNA  →  [ASO blocks inhibitor]  →  ↑ Nav1.1 protein        │   │
+│  └─────────────────────────────────────────────────────────────────────────┘   │
+│                                                                                 │
+│  🦠 GENE THERAPY                                                               │
+│  ═══════════════                                                               │
+│  ┌─────────────────────────────────────────────────────────────────────────┐   │
+│  │  ETX101 (Encoded Therapeutics)                                          │   │
+│  │  • AAV-delivered gene therapy for Dravet                                │   │
+│  │  • Targets SCN1A expression in inhibitory neurons                       │   │
+│  │  • Status: Phase 1/2 trials                                             │   │
+│  │                                                                         │   │
+│  │     AAV vector  →  [Delivery to neurons]  →  ↑ SCN1A expression        │   │
+│  └─────────────────────────────────────────────────────────────────────────┘   │
+│                                                                                 │
+│  ✂️ GENE EDITING (CRISPR)                                                      │
+│  ════════════════════════                                                      │
+│  ┌─────────────────────────────────────────────────────────────────────────┐   │
+│  │  Approach: dCas9-mediated promoter activation                           │   │
+│  │  Target: Upregulate SCN1A expression                                    │   │
+│  │  Status: Preclinical (mouse models successful)                          │   │
+│  │                                                                         │   │
+│  │  Challenges:                                                            │   │
+│  │  • CNS delivery                                                         │   │
+│  │  • Potential immune response to Cas9                                    │   │
+│  │  • Off-target effects                                                   │   │
+│  └─────────────────────────────────────────────────────────────────────────┘   │
+│                                                                                 │
+│  💊 SMALL MOLECULE MODULATORS                                                  │
+│  ════════════════════════════                                                  │
+│  ┌─────────────────────────────────────────────────────────────────────────┐   │
+│  │  • Ezogabine (KCNQ2): Compassionate use                                 │   │
+│  │  • Quinidine (KCNT1): Limited efficacy                                  │   │
+│  │  • mTOR inhibitors (TSC): FDA approved (Everolimus)                     │   │
+│  └─────────────────────────────────────────────────────────────────────────┘   │
+│                                                                                 │
+└─────────────────────────────────────────────────────────────────────────────────┘
+```
 
 ---
 
@@ -518,148 +949,309 @@ Based on the [KCNQ2 paradigm for precision medicine](https://jtggjournal.com/art
 
 ### 9.1 Diagnostic Pearls
 
-| Pearl | Application |
-|-------|-------------|
-| "Fever + prolonged seizure in infant = think SCN1A" | Early genetic testing in suspected Dravet |
-| "Neonatal seizures with burst suppression = think STXBP1, KCNQ2" | Guide urgent genetic testing |
-| "Seizures only in females with variable severity = think PCDH19" | X-linked pattern |
-| "Glucose low in CSF with normal blood glucose = think GLUT1" | SLC2A1 testing, ketogenic diet |
+```
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                           💎 DIAGNOSTIC PEARLS                                  │
+├─────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                 │
+│  🔥 "Fever + prolonged seizure in infant → Think SCN1A"                        │
+│  ─────────────────────────────────────────────────────                         │
+│  First febrile seizure that is prolonged (>15 min), hemiclonic,                │
+│  or followed by more seizures = HIGH suspicion for Dravet                      │
+│  → Order SCN1A testing early, AVOID sodium channel blockers                    │
+│                                                                                 │
+│  📊 "Burst-suppression in neonate → Think STXBP1, KCNQ2, SCN2A"               │
+│  ──────────────────────────────────────────────────────────────                │
+│  Severe early-onset DEE with burst-suppression pattern                         │
+│  → Urgent genetic panel, consider sodium channel blockers for KCNQ2            │
+│                                                                                 │
+│  ♀️ "Seizures only in females + variable severity → Think PCDH19"              │
+│  ────────────────────────────────────────────────────────────────              │
+│  Seizure clusters, often fever-related, males are unaffected carriers          │
+│  → X-linked inheritance with cellular mosaicism                                │
+│                                                                                 │
+│  🍬 "Low CSF glucose + normal blood glucose → Think GLUT1"                     │
+│  ─────────────────────────────────────────────────────────                     │
+│  CSF:blood glucose ratio <0.4, movement disorder, developmental delay          │
+│  → SLC2A1 testing, ketogenic diet is treatment of choice                       │
+│                                                                                 │
+│  🌙 "Seizures only from sleep + centrotemporal spikes → Think SLECTS"          │
+│  ────────────────────────────────────────────────────────────────────          │
+│  Benign rolandic epilepsy, speech arrest, drooling                             │
+│  → Usually no imaging needed, excellent prognosis, often no treatment          │
+│                                                                                 │
+│  👀 "Staring spells + 3Hz spike-wave + hyperventilation trigger → Think CAE"   │
+│  ───────────────────────────────────────────────────────────────────────       │
+│  Brief (<30 sec) absence seizures, multiple per day                            │
+│  → First-line: Ethosuximide or Valproate, 70% remission by adolescence        │
+│                                                                                 │
+└─────────────────────────────────────────────────────────────────────────────────┘
+```
 
 ### 9.2 Common Pitfalls to Avoid
 
-| Pitfall | Consequence | Prevention |
-|---------|-------------|------------|
-| Starting sodium channel blocker without genetic diagnosis | Worsening in Dravet syndrome | Consider genetic testing early |
-| Misinterpreting normal EEG variants as epileptiform | Overdiagnosis, unnecessary treatment | Know age-appropriate patterns |
-| Skipping developmental history | Missing DEE diagnosis | Always assess milestones |
-| Ignoring family history | Missing inherited syndromes | Three-generation pedigree |
-
-### 9.3 Emergency Considerations
-
-**For patients with known Dravet syndrome or suspected SCN1A mutation:**
-
 ```
-⚠️ IN STATUS EPILEPTICUS:
-✓ USE: Benzodiazepines (lorazepam, diazepam, midazolam)
-✓ USE: Valproate IV
-✗ AVOID: Phenytoin/Fosphenytoin
-✗ AVOID: Lacosamide
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                          ⚠️ COMMON PITFALLS                                     │
+├─────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                 │
+│  ❌ PITFALL 1: Starting sodium channel blocker without genetic diagnosis        │
+│  ═══════════════════════════════════════════════════════════════════           │
+│                                                                                 │
+│     Scenario: Infant with febrile seizures started on phenytoin                │
+│               Later diagnosed with Dravet syndrome                              │
+│                                                                                 │
+│     Result:   Seizure worsening, status epilepticus                            │
+│                                                                                 │
+│     Prevention: • Consider genetics early in refractory infant epilepsy        │
+│                 • Use valproate/clobazam as first-line if Dravet suspected     │
+│                                                                                 │
+│  ❌ PITFALL 2: Misinterpreting normal EEG variants as epileptiform             │
+│  ═══════════════════════════════════════════════════════════════════           │
+│                                                                                 │
+│     Common mistakes:                                                            │
+│     • Posterior slow waves of youth → Called "occipital spikes"                │
+│     • Hypnagogic hypersynchrony → Called "generalized slowing"                 │
+│     • Wicket spikes → Called "temporal sharp waves"                            │
+│                                                                                 │
+│     Prevention: • Know age-appropriate normal variants                         │
+│                 • Correlate with clinical history                              │
+│                                                                                 │
+│  ❌ PITFALL 3: Skipping developmental history                                  │
+│  ═══════════════════════════════════════════════════════════════════           │
+│                                                                                 │
+│     Missed: Developmental regression preceding seizure onset                    │
+│             (Key feature of DEE, metabolic disorders)                           │
+│                                                                                 │
+│     Prevention: • Always document developmental milestones                     │
+│                 • Ask about skill loss, plateau                                │
+│                                                                                 │
+│  ❌ PITFALL 4: Inadequate family history                                       │
+│  ═══════════════════════════════════════════════════════════════════           │
+│                                                                                 │
+│     Missed: • Autosomal dominant epilepsy syndromes                            │
+│             • Consanguinity (recessive disorders)                               │
+│             • Febrile seizures in relatives (GEFS+, Dravet)                    │
+│                                                                                 │
+│     Prevention: • Three-generation pedigree                                    │
+│                 • Ask about seizures, developmental delay, early deaths        │
+│                                                                                 │
+└─────────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
 ## 10. Summary: Approach to Pediatric Neurologic Diseases
 
-### Etiology Framework
-
-Pediatric neurologic diseases are caused by:
+### 10.1 Etiology Framework
 
 ```
-┌─────────────────────────────────────────────────┐
-│              ETIOLOGICAL CATEGORIES             │
-├─────────────────────────────────────────────────┤
-│  🧬 GENETIC                                     │
-│     • Monogenic (SCN1A, KCNQ2, STXBP1...)      │
-│     • Chromosomal (Down, Angelman...)           │
-│     • Complex inheritance                       │
-├─────────────────────────────────────────────────┤
-│  ⚗️  METABOLIC                                  │
-│     • Inborn errors of metabolism               │
-│     • Mitochondrial disorders                   │
-│     • Storage diseases                          │
-├─────────────────────────────────────────────────┤
-│  🦠 INFECTIOUS                                  │
-│     • Meningitis/Encephalitis                   │
-│     • Congenital infections (TORCH)             │
-│     • Post-infectious                           │
-├─────────────────────────────────────────────────┤
-│  🌍 ENVIRONMENTAL                               │
-│     • Hypoxic-ischemic injury                   │
-│     • Toxic exposures                           │
-│     • Trauma                                    │
-└─────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                    ETIOLOGY OF PEDIATRIC NEUROLOGIC DISEASES                    │
+├─────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                 │
+│                            ┌─────────────────┐                                  │
+│                            │   PEDIATRIC     │                                  │
+│                            │   NEUROLOGIC    │                                  │
+│                            │   DISEASES      │                                  │
+│                            └────────┬────────┘                                  │
+│                                     │                                           │
+│         ┌───────────────┬───────────┼───────────┬───────────────┐              │
+│         ▼               ▼           ▼           ▼               ▼              │
+│   ┌──────────┐   ┌──────────┐ ┌──────────┐ ┌──────────┐  ┌──────────┐         │
+│   │  🧬      │   │  ⚗️      │ │  🦠      │ │  🌍      │  │  🏥      │         │
+│   │ GENETIC  │   │METABOLIC │ │INFECTIOUS│ │ENVIRON-  │  │STRUCTURAL│         │
+│   │          │   │          │ │          │ │ MENTAL   │  │          │         │
+│   └────┬─────┘   └────┬─────┘ └────┬─────┘ └────┬─────┘  └────┬─────┘         │
+│        │              │            │            │              │               │
+│        ▼              ▼            ▼            ▼              ▼               │
+│   • Monogenic    • IEM       • Meningitis  • HIE         • Malformations     │
+│   • Chromosomal  • Mito      • Encephalitis• Toxins      • Tumors            │
+│   • Complex      • Storage   • TORCH       • Trauma      • Vascular          │
+│                                                                                 │
+└─────────────────────────────────────────────────────────────────────────────────┘
 ```
 
-### Clinical Approach Checklist
+### 10.2 Clinical Approach Summary
 
-#### 1. Comprehensive History
+```mermaid
+flowchart TD
+    A[👶 Child with Neurological Concern] --> B[📋 COMPREHENSIVE HISTORY]
 
-- [ ] **Prenatal**: Exposures, infections, fetal movements
-- [ ] **Perinatal**: Delivery complications, APGAR scores, NICU stay
-- [ ] **Postnatal**: Developmental milestones, regression
-- [ ] **Seizure history**: Detailed semiology
-- [ ] **Family history**: Three-generation pedigree, consanguinity
+    B --> B1[Prenatal: exposures, infections]
+    B --> B2[Perinatal: complications, APGAR]
+    B --> B3[Development: milestones, regression]
+    B --> B4[Seizure: detailed semiology]
+    B --> B5[Family: 3-generation pedigree]
 
-#### 2. Physical Examination
+    B1 & B2 & B3 & B4 & B5 --> C[🔍 PHYSICAL EXAMINATION]
 
-- [ ] General: Growth parameters, dysmorphic features
-- [ ] Skin: Neurocutaneous stigmata
-- [ ] Neurological: Complete examination
-- [ ] Developmental assessment
+    C --> C1[Growth parameters]
+    C --> C2[Dysmorphic features]
+    C --> C3[Skin: neurocutaneous]
+    C --> C4[Neurological exam]
+    C --> C5[Developmental assessment]
 
-#### 3. Investigations
+    C1 & C2 & C3 & C4 & C5 --> D[🧪 INVESTIGATIONS]
 
-- [ ] EEG (routine, prolonged if needed)
-- [ ] Neuroimaging (MRI with epilepsy protocol)
-- [ ] Genetic testing (guided by phenotype)
-- [ ] Metabolic workup (when indicated)
+    D --> D1[EEG]
+    D --> D2[MRI brain]
+    D --> D3[Genetic testing]
+    D --> D4[Metabolic workup]
 
-#### 4. Diagnosis and Management
+    D1 & D2 & D3 & D4 --> E[📊 DIAGNOSIS]
 
-- [ ] Classify seizure and epilepsy type (ILAE)
-- [ ] Identify epilepsy syndrome if possible
-- [ ] Select treatment based on diagnosis
-- [ ] Avoid contraindicated medications
-- [ ] Genetic counseling when applicable
+    E --> E1[Classify seizure type]
+    E --> E2[Determine epilepsy type]
+    E --> E3[Identify syndrome]
+    E --> E4[Find etiology]
+
+    E1 & E2 & E3 & E4 --> F[💊 MANAGEMENT]
+
+    F --> F1[Gene-specific treatment]
+    F --> F2[Avoid contraindicated drugs]
+    F --> F3[Consider non-pharmacologic]
+    F --> F4[Genetic counseling]
+
+    style A fill:#e3f2fd
+    style B fill:#fff3e0
+    style C fill:#e8f5e9
+    style D fill:#fce4ec
+    style E fill:#f3e5f5
+    style F fill:#e0f7fa
+```
 
 ---
 
 ## 11. Learning Objectives and Self-Assessment
 
-### Learning Objectives
+### 11.1 Learning Objectives Checklist
 
 After completing this lecture, students should be able to:
 
-1. ✓ Define seizure, epilepsy, and status epilepticus
-2. ✓ Apply the ILAE classification system
-3. ✓ Interpret age-appropriate EEG findings
-4. ✓ List major epilepsy genes and their associated phenotypes
-5. ✓ Outline the diagnostic workup for first seizure
-6. ✓ Perform systematic phenotyping using standardized terminology
-7. ✓ Recognize when genetic testing is indicated
-8. ✓ Identify gene-specific treatment considerations
-9. ✓ Avoid medications contraindicated in specific genetic epilepsies
+| # | Objective | Self-Check |
+|---|-----------|------------|
+| 1 | Define seizure, epilepsy, and status epilepticus | □ |
+| 2 | Apply the ILAE 2017/2022 classification system | □ |
+| 3 | Interpret age-appropriate EEG findings | □ |
+| 4 | List major epilepsy genes and their phenotypes | □ |
+| 5 | Outline the diagnostic workup for first seizure | □ |
+| 6 | Perform systematic phenotyping using HPO terminology | □ |
+| 7 | Recognize when genetic testing is indicated | □ |
+| 8 | Identify gene-specific treatment considerations | □ |
+| 9 | Avoid medications contraindicated in specific genetic epilepsies | □ |
+| 10 | Counsel families on epilepsy prognosis and management | □ |
 
-### Self-Assessment Questions
+### 11.2 Self-Assessment Questions
 
 <details>
-<summary><b>Question 1:</b> A 6-month-old presents with recurrent prolonged seizures triggered by fever. Genetic testing reveals an SCN1A mutation. Which medication should be AVOIDED?</summary>
+<summary><b>Question 1:</b> A 6-month-old presents with recurrent prolonged seizures triggered by fever. Genetic testing reveals an SCN1A pathogenic variant. Which medication should be AVOIDED?</summary>
 
-**Answer**: Sodium channel blockers (phenytoin, carbamazepine, lamotrigine, oxcarbazepine, lacosamide) should be avoided as they worsen seizures in Dravet syndrome.
+**Answer**:
+Sodium channel blockers should be **AVOIDED**:
+- Phenytoin/Fosphenytoin
+- Carbamazepine
+- Oxcarbazepine
+- Lamotrigine
+- Lacosamide
+
+These drugs block sodium channels and can worsen seizures in Dravet syndrome because SCN1A mutations already cause loss of Nav1.1 function in inhibitory neurons.
+
+**First-line treatment**: Valproate + Clobazam
 </details>
 
 <details>
 <summary><b>Question 2:</b> What is the expected posterior dominant rhythm frequency for a healthy 3-year-old?</summary>
 
-**Answer**: 7-8 Hz. PDR matures from 4-5 Hz at 6 months to adult frequencies (9-10 Hz) by age 10-12 years.
+**Answer**:
+**7-8 Hz**
+
+PDR maturation follows this pattern:
+- 6 months: 4-5 Hz
+- 1 year: 5-6 Hz
+- 2 years: 6-7 Hz
+- **3 years: 7-8 Hz**
+- 8 years: 8-9 Hz
+- 10 years: 9-10 Hz (adult-like)
+
+Clinical pearl: PDR should be approximately [age in years + 2-3] Hz
 </details>
 
 <details>
 <summary><b>Question 3:</b> A neonate presents with tonic seizures on day 3 of life. EEG shows burst-suppression. Which genes should be prioritized for testing?</summary>
 
-**Answer**: STXBP1, KCNQ2, and SCN2A are major causes of early-onset DEE with burst-suppression pattern.
+**Answer**:
+Priority genes for neonatal-onset DEE with burst-suppression:
+1. **STXBP1** - Most common cause of Ohtahara syndrome
+2. **KCNQ2** - Early neonatal onset, may respond to sodium channel blockers
+3. **SCN2A** - Variable phenotype
+4. **KCNT1** - EIMFS
+5. **ARX** (in males) - X-linked
+
+Consider urgent epilepsy gene panel or rapid trio whole exome sequencing.
 </details>
 
 <details>
 <summary><b>Question 4:</b> When is emergent neuroimaging indicated after a first unprovoked seizure?</summary>
 
-**Answer**: Emergent imaging is indicated for: prolonged postictal state (>30 min), persistent focal deficits, signs of elevated ICP, history of trauma, immunocompromised status, or age <6 months with symptomatic seizure.
+**Answer**:
+Emergent imaging (CT initially, MRI when stable) is indicated for:
+
+**RED FLAGS:**
+- Prolonged postictal state (>30 minutes)
+- Persistent focal neurological deficit
+- Signs of elevated intracranial pressure
+- History of significant head trauma
+- Immunocompromised state
+- Concern for child abuse
+- Age < 6 months with symptomatic seizure
+- New focal findings on examination
+
+**NOT required if:**
+- Child returned to baseline
+- Non-focal examination
+- Recognized benign epilepsy syndrome
+- Simple febrile seizure
 </details>
 
 <details>
-<summary><b>Question 5:</b> What is the first-line treatment for KCNQ2-related epilepsy?</summary>
+<summary><b>Question 5:</b> What is the first-line treatment for KCNQ2-related epilepsy, and why does this differ from Dravet syndrome?</summary>
 
-**Answer**: Sodium channel blockers (carbamazepine, oxcarbazepine) are first-line for KCNQ2-related epilepsy, in contrast to Dravet syndrome where they are contraindicated.
+**Answer**:
+**KCNQ2 first-line**: Sodium channel blockers (Carbamazepine, Oxcarbazepine, Phenytoin)
+
+**Why the opposite of Dravet?**
+
+| Feature | SCN1A (Dravet) | KCNQ2 |
+|---------|---------------|-------|
+| Affected channel | Nav1.1 (sodium) | Kv7.2 (potassium) |
+| Mutation effect | Loss of function in inhibitory neurons | Loss or gain of function |
+| Na+ blockers | Worsen seizures | Often effective |
+| Mechanism | Further reduces inhibitory neuron function | Different pathophysiology |
+
+This illustrates why genetic diagnosis BEFORE medication selection is critical for precision medicine in epilepsy.
+</details>
+
+<details>
+<summary><b>Question 6:</b> A 5-year-old girl has absence seizures provoked by hyperventilation, with 3 Hz generalized spike-wave on EEG. What is the diagnosis and prognosis?</summary>
+
+**Answer**:
+**Diagnosis**: Childhood Absence Epilepsy (CAE)
+
+**Key features**:
+- Age 4-8 years
+- Brief (5-15 second) staring spells
+- Multiple episodes daily
+- Triggered by hyperventilation
+- 3 Hz generalized spike-wave
+
+**Prognosis**: GOOD
+- ~70% achieve remission by adolescence
+- Some develop JME or GTC seizures
+
+**Treatment**:
+- First-line: Ethosuximide (absence only) or Valproate (if GTC risk)
+- Avoid: Carbamazepine, Phenytoin (can worsen absence)
 </details>
 
 ---
@@ -670,18 +1262,16 @@ After completing this lecture, students should be able to:
 
 1. **ILAE Classification**
    - [ILAE Definition & Classification Portal](https://www.ilae.org/guidelines/definition-and-classification)
-   - Specchio N, et al. ILAE classification of childhood epilepsy syndromes. *Epilepsia* 2022
+   - Specchio N, et al. *Epilepsia* 2022 - Childhood epilepsy syndromes
    - [Updated Classification of Epileptic Seizures (2025)](https://onlinelibrary.wiley.com/doi/10.1111/epi.18338)
 
 2. **Pediatric EEG**
    - [NCBI Bookshelf: Developmental EEG](https://www.ncbi.nlm.nih.gov/books/NBK390356/)
    - [LearningEEG.com Pediatric Resources](https://www.learningeeg.com/pediatric)
-   - [ACNS Minimum Technical Standards for Pediatric EEG](https://www.acns.org/UserFiles/file/Guideline5-MinimumTechnicalStandardsforPediatricEEG_v1.pdf)
 
 3. **Genetic Epilepsies**
-   - McTague A, et al. The genetic landscape of the epileptic encephalopathies. *Lancet Neurology* 2016
+   - McTague A, et al. *Lancet Neurology* 2016 - Genetic landscape of epileptic encephalopathies
    - [Precision medicine in KCNQ2 epilepsy](https://jtggjournal.com/article/view/3566)
-   - [DEE therapeutic consequences](https://pmc.ncbi.nlm.nih.gov/articles/PMC11006352/)
 
 4. **Phenotyping Resources**
    - [Human Phenotype Ontology (HPO)](https://hpo.jax.org/)
@@ -691,21 +1281,31 @@ After completing this lecture, students should be able to:
    - [CHOP Unprovoked Seizure Clinical Pathway](https://www.chop.edu/clinical-pathway/unprovoked-seizure-clinical-pathway)
    - [Dravet Syndrome Treatment Guide](https://pmc.ncbi.nlm.nih.gov/articles/PMC8927048/)
 
+### Online Resources
+
+| Resource | URL | Description |
+|----------|-----|-------------|
+| ILAE | [ilae.org](https://ilae.org) | Classification, guidelines |
+| HPO | [hpo.jax.org](https://hpo.jax.org) | Phenotype terminology |
+| OMIM | [omim.org](https://omim.org) | Gene-disease relationships |
+| GeneReviews | [ncbi.nlm.nih.gov/books/NBK1116/](https://ncbi.nlm.nih.gov/books/NBK1116/) | Clinical genetic summaries |
+| ClinVar | [ncbi.nlm.nih.gov/clinvar/](https://ncbi.nlm.nih.gov/clinvar/) | Variant interpretation |
+
 ### Suggested Textbooks
 
 - Swaiman's Pediatric Neurology (6th edition)
 - Pediatric Epilepsy (Pellock, Nordli, Sankar, Wheless)
 - Atlas of Pediatric EEG (Blume, Kaibara, Young)
 
-### Online Resources
+---
 
-| Resource | URL | Description |
-|----------|-----|-------------|
-| ILAE | ilae.org | Classification, guidelines |
-| HPO | hpo.jax.org | Phenotype terminology |
-| OMIM | omim.org | Gene-disease relationships |
-| GeneReviews | ncbi.nlm.nih.gov/books/NBK1116/ | Clinical genetic summaries |
-| ClinVar | ncbi.nlm.nih.gov/clinvar/ | Variant interpretation |
+## Version History
+
+| Version | Date | Changes |
+|---------|------|---------|
+| 1.0 | 2023-10-23 | Initial student lecture |
+| 2.0 | 2024-12 | Comprehensive update: ILAE 2022/2025, genetic content, precision medicine |
+| 2.1 | 2024-12 | Enhanced visual materials: diagrams, flowcharts, Mermaid charts |
 
 ---
 
@@ -715,18 +1315,9 @@ This lecture material is prepared for medical student education at Korea Univers
 
 ---
 
-## Version History
-
-| Version | Date | Changes |
-|---------|------|---------|
-| 1.0 | 2023-10-23 | Initial student lecture |
-| 2.0 | 2024-12 | Comprehensive update with genetic era content, ILAE 2022/2025 classification, precision medicine |
-
----
-
 *This document is intended for educational purposes. Clinical decisions should be based on individual patient assessment and current guidelines.*
 
-**License**: This work is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+**License**: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 ---
 
