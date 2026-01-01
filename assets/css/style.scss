@@ -1,0 +1,88 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Custom styles for proper rendering of box-drawing characters and ASCII art */
+
+/* Ensure code blocks use a monospace font that supports Unicode box-drawing characters */
+pre,
+code,
+pre code,
+.highlight pre,
+.highlight code {
+  font-family: 'Cascadia Code', 'Fira Code', 'DejaVu Sans Mono', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace !important;
+  font-size: 14px;
+  line-height: 1.4;
+  /* Disable font smoothing for better character alignment */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Prevent text wrapping in code blocks */
+  white-space: pre;
+  overflow-x: auto;
+  /* Better rendering for special characters */
+  text-rendering: optimizeLegibility;
+  font-variant-ligatures: none;
+  font-feature-settings: normal;
+}
+
+/* Ensure pre blocks have proper spacing and scrolling */
+pre {
+  padding: 16px;
+  overflow: auto;
+  background-color: #f6f8fa;
+  border-radius: 6px;
+  border: 1px solid #d0d7de;
+  margin-bottom: 16px;
+}
+
+/* Ensure inline code has proper styling */
+code {
+  padding: 0.2em 0.4em;
+  background-color: rgba(175, 184, 193, 0.2);
+  border-radius: 6px;
+}
+
+/* Remove background from code inside pre to avoid double styling */
+pre code {
+  padding: 0;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+/* Improve table rendering for better readability */
+table {
+  border-collapse: collapse;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+table th,
+table td {
+  padding: 8px 13px;
+  border: 1px solid #d0d7de;
+}
+
+table th {
+  background-color: #f6f8fa;
+  font-weight: 600;
+}
+
+/* Ensure emojis render properly in code blocks */
+pre code,
+.highlight pre {
+  /* Allow emojis to use color fonts */
+  font-variant-emoji: emoji;
+}
+
+/* Responsive adjustments for mobile devices */
+@media screen and (max-width: 768px) {
+  pre,
+  code {
+    font-size: 12px;
+  }
+
+  pre {
+    padding: 12px;
+  }
+}
