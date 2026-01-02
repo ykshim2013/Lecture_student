@@ -59,7 +59,7 @@ Comprehensive educational materials for pediatric neurology, focusing on seizure
 
 Clone this repository:
 ```bash
-git clone https://github.com/ykshim2025/Lecture_student.git
+git clone https://github.com/ykshim2013/Lecture_student.git
 ```
 
 ## Author
