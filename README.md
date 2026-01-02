@@ -1,14 +1,14 @@
 # Pediatric Neurology Lecture Materials
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-[![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-blue)](https://ykshim2025.github.io/Lecture_student/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-blue)](https://ykshim2013.github.io/Lecture_student/)
 
 ## View Online
 
-Visit the [GitHub Pages site](https://ykshim2025.github.io/Lecture_student/) for the best reading experience.
+Visit the [GitHub Pages site](https://ykshim2013.github.io/Lecture_student/) for the best reading experience.
 
 ### QR Code for Mobile Access
-![QR Code](https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ykshim2025.github.io/Lecture_student/)
+![QR Code](https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ykshim2013.github.io/Lecture_student/)
 
 *Scan to access the lecture materials on your mobile device*
 
