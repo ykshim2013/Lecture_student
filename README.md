@@ -22,7 +22,7 @@ Comprehensive educational materials for pediatric neurology, focusing on seizure
 
 | Document | Description |
 |----------|-------------|
-| [Pediatric Neurology Lecture](Pediatric_Neurology_Lecture.md) | Complete lecture notes covering seizures, EEG, genetic epilepsies, and precision medicine |
+| [Pediatric Neurology - Seizure](Pediatric_Neurology_Seizure.md) | Complete lecture notes covering seizures, EEG, genetic epilepsies, and precision medicine |
 
 ## Topics Covered
 
