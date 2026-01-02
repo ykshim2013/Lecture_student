@@ -3,6 +3,17 @@
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-blue)](https://ykshim2025.github.io/Lecture_student/)
 
+## View Online
+
+Visit the [GitHub Pages site](https://ykshim2025.github.io/Lecture_student/) for the best reading experience.
+
+### QR Code for Mobile Access
+![QR Code](https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ykshim2025.github.io/Lecture_student/)
+
+*Scan to access the lecture materials on your mobile device*
+
+---
+
 ## Overview
 
 Comprehensive educational materials for pediatric neurology, focusing on seizures, epilepsy, and the modern genetic era of diagnosis and treatment. Designed for medical students and residents.
@@ -44,17 +55,8 @@ Comprehensive educational materials for pediatric neurology, focusing on seizure
 - [CHOP Seizure Clinical Pathway](https://www.chop.edu/clinical-pathway/unprovoked-seizure-clinical-pathway)
 - [ACNS Pediatric EEG Standards](https://www.acns.org/)
 
-## Usage
+## Download
 
-### View Online
-Visit the [GitHub Pages site](https://ykshim2025.github.io/Lecture_student/) for the best reading experience.
-
-#### QR Code for Mobile Access
-![QR Code](https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ykshim2025.github.io/Lecture_student/)
-
-*Scan to access the lecture materials on your mobile device*
-
-### Download
 Clone this repository:
 ```bash
 git clone https://github.com/ykshim2025/Lecture_student.git
