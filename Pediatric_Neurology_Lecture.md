@@ -119,7 +119,7 @@ Pediatric neurology encompasses disorders of the nervous system in children, fro
 
 ### 3.1 Three Levels of Diagnosis (ILAE 2017)
 
-```mermaid
+<div class="mermaid">
 flowchart TD
     A[🔍 LEVEL 1: SEIZURE TYPE] --> B[📋 LEVEL 2: EPILEPSY TYPE]
     B --> C[🏥 LEVEL 3: EPILEPSY SYNDROME]
@@ -138,7 +138,7 @@ flowchart TD
     style A fill:#e1f5fe
     style B fill:#fff3e0
     style C fill:#e8f5e9
-```
+</div>
 
 ### 3.2 Seizure Classification Overview (ILAE 2017/2025)
 
@@ -455,7 +455,7 @@ flowchart TD
 
 ### 5.3 Developmental and Epileptic Encephalopathies (DEEs)
 
-```mermaid
+<div class="mermaid">
 graph TD
     subgraph DEE["DEVELOPMENTAL & EPILEPTIC ENCEPHALOPATHIES (DEEs)"]
         A[Over 800 genes identified] --> B[Both epilepsy AND development affected]
@@ -474,7 +474,7 @@ graph TD
     style D fill:#ffebee
     style E fill:#fff3e0
     style F fill:#e8f5e9
-```
+</div>
 
 ---
 
@@ -482,7 +482,7 @@ graph TD
 
 ### 6.1 First Seizure Evaluation Algorithm
 
-```mermaid
+<div class="mermaid">
 flowchart TD
     A[🚨 FIRST UNPROVOKED SEIZURE] --> B{Child returned<br/>to baseline?}
 
@@ -513,7 +513,7 @@ flowchart TD
     style C fill:#ffebee
     style E fill:#ef5350,color:#fff
     style H fill:#e8f5e9
-```
+</div>
 
 ### 6.2 Diagnostic Workup Summary
 
@@ -548,7 +548,7 @@ flowchart TD
 
 ### 6.3 When to Order Genetic Testing
 
-```mermaid
+<div class="mermaid">
 flowchart LR
     A[Consider Genetic Testing] --> B{Clinical Features}
 
@@ -573,7 +573,7 @@ flowchart LR
 
     style A fill:#e3f2fd
     style I fill:#fff3e0
-```
+</div>
 
 ### 6.4 Genetic Testing Algorithm
 
@@ -772,7 +772,7 @@ flowchart LR
 
 ### 8.1 Gene-Specific Treatment Overview
 
-```mermaid
+<div class="mermaid">
 flowchart TD
     subgraph PRECISION["🎯 PRECISION MEDICINE IN EPILEPSY"]
         A[Genetic Diagnosis] --> B{Gene Identified}
@@ -801,7 +801,7 @@ flowchart TD
     style D fill:#e8f5e9
     style E fill:#fff8e1
     style F fill:#f3e5f5
-```
+</div>
 
 ### 8.2 SCN1A/Dravet Syndrome - Critical Safety Information
 
@@ -1074,7 +1074,7 @@ flowchart TD
 
 ### 10.2 Clinical Approach Summary
 
-```mermaid
+<div class="mermaid">
 flowchart TD
     A[👶 Child with Neurological Concern] --> B[📋 COMPREHENSIVE HISTORY]
 
@@ -1119,7 +1119,7 @@ flowchart TD
     style D fill:#fce4ec
     style E fill:#f3e5f5
     style F fill:#e0f7fa
-```
+</div>
 
 ---
 
