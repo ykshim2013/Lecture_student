@@ -49,6 +49,11 @@ Comprehensive educational materials for pediatric neurology, focusing on seizure
 ### View Online
 Visit the [GitHub Pages site](https://ykshim2025.github.io/Lecture_student/) for the best reading experience.
 
+#### QR Code for Mobile Access
+![QR Code](https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ykshim2025.github.io/Lecture_student/)
+
+*Scan to access the lecture materials on your mobile device*
+
 ### Download
 Clone this repository:
 ```bash
